@@ -1,0 +1,59 @@
+/* Your custom styles go here.
+   Use Bootstrap classes first, and write your own CSS only when you need to. */
+body
+{
+  background-color: #f8f9fa;
+}
+
+main
+{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.summary-cards
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.summary-cards .card
+{
+  height: 100%;
+}
+
+.card-text
+{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section
+{
+  margin-bottom: 30px;
+}
+
+table
+{
+  background-color: white;
+}
+
+@media (max-width: 768px)
+{
+  .summary-cards
+  {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  table
+  {
+    font-size: 14px;
+  }
+
+  .btn
+  {
+    margin-bottom: 5px;
+  }
+}
